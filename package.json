@@ -1,9 +1,12 @@
 {
+  "homepage": "https://Ankitgit98.github.io/contact-manager-api",
   "name": "server-api",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "json-server -p 3006 -w db.json"
   },
   "keywords": [],
@@ -11,5 +14,8 @@
   "license": "ISC",
   "dependencies": {
     "json-server": "^0.16.3"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
   }
 }
